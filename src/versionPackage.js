@@ -32,7 +32,7 @@ async function versionPackage(pkgFile, flags) {
   const { number } = await autonum(`/v1/next?id=${pkgKey}`, commit);
   const version = pkgContent.version.replace(/\d+$/, number);
   
-  console.log({pkgFile, commit, number, version, pkgKey, flags})
+  console.log(`${pkgKey} updated to version ${version}`);
 
   pkgContent.version = version;
   fs.writeFileSync(pkgFile, JSON.stringify(pkgContent, null, 2));

@@ -1,6 +1,6 @@
 {
   "name": "autonum-app",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "description": "Updates package.json with auto-incrementing version",
   "author": "n3rdy.me",
   "license": "MIT",
