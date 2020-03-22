@@ -5,7 +5,7 @@ const versionPackage = require('./versionPackage');
 
 async function main(args) {
     const flags = args.filter(x => x.startsWith('--'))
-        .reduce((m, f) => { m[f.substr(2)] = true; return m; }, {});
+        .reduce((m, f) => { m[f.substr(2).split('=')[0]] = f.substr(2).split('=')[1] || true; return m; }, {});
 
     const packages = args.filter(x => !x.startsWith('--'))
         .reduce((all, pattern) => [
