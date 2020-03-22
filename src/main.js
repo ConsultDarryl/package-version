@@ -25,7 +25,6 @@ async function main(args) {
 
 main(process.argv.slice(2))
     .then(() => {
-        console.log('done');
         process.exit(0);
     })
     .catch((ex) => {
