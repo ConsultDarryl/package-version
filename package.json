@@ -1,17 +1,17 @@
 {
-  "name": "autonum-app",
-  "version": "1.0.5",
-  "description": "Updates package.json with auto-incrementing version",
-  "author": "n3rdy.me",
+  "name": "package-version",
+  "version": "1.0.7",
+  "description": "Increment package.json version number",
+  "author": "consultdarryl",
   "license": "MIT",
   "main": "index.js",
-  "homepage": "https://github.com/n3rdyme/autonum-app#readme",
+  "homepage": "https://github.com/ConsultDarryl/package-version#readme",
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/n3rdyme/autonum-app.git"
+    "url": "https://github.com/ConsultDarryl/package-version.git"
   },
   "bugs": {
-    "url": "https://github.com/n3rdyme/autonum-app/issues"
+    "url": "https://github.com/ConsultDarryl/package-version/issues"
   },
   "keywords": [
     "Auto",
@@ -22,14 +22,13 @@
     "package.json"
   ],
   "dependencies": {
-    "bent": "^7.1.2",
     "glob": "^7.1.6"
   },
   "bin": {
     "autonum": "./bin/autonum"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\"",
+    "test": "node src/main.js ./package.json",
     "prepublishOnly": "./bin/autonum package.json --add-commit"
   }
 }
