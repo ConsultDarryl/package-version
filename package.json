@@ -1,17 +1,17 @@
 {
-  "name": "package-version",
-  "version": "1.0.7",
+  "name": "package-version-plus",
+  "version": "1.0.0",
   "description": "Increment package.json version number",
   "author": "consultdarryl",
   "license": "MIT",
   "main": "index.js",
-  "homepage": "https://github.com/ConsultDarryl/package-version#readme",
+  "homepage": "https://github.com/ConsultDarryl/package-version-plus#readme",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ConsultDarryl/package-version.git"
+    "url": "https://github.com/ConsultDarryl/package-version-plus.git"
   },
   "bugs": {
-    "url": "https://github.com/ConsultDarryl/package-version/issues"
+    "url": "https://github.com/ConsultDarryl/package-version-plus/issues"
   },
   "keywords": [
     "Auto",
@@ -22,13 +22,12 @@
     "package.json"
   ],
   "dependencies": {
-    "glob": "^7.1.6"
+    "glob": "^8.0.1"
   },
   "bin": {
-    "autonum": "./bin/autonum"
+    "package-version": "./bin/package-version-plus"
   },
   "scripts": {
-    "test": "node src/main.js ./package.json",
-    "prepublishOnly": "./bin/autonum package.json --add-commit"
+    "test": "node src/main.js ./package.json"
   }
 }
